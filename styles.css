@@ -1,0 +1,102 @@
+/*=============== BASE STYLE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    /* Color highlighting when pressed on mobile devices */
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+
+  :root {
+    /*========== Colors ==========*/
+    /*Color mode Hex Values*/
+    --white: hsl(0, 0%, 100%);
+    --slate300: hsl(212, 45%, 89%);
+    --slate500: hsl(216, 15%, 48%);
+    --slate900: hsl(218, 44%, 22%);
+
+   /*========== Font weight ==========*/
+   --font-weight-normal: 400; 
+   --font-weight-bold: 700;
+  
+    /*========== Font and typography ==========*/
+    /*1rem = 15px ...*/
+    --body-font-family: "Poppins", sans-serif;
+    --font-size: 15px;
+  }
+ 
+/* Attribution */
+    .attribution {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;  
+      padding-bottom: 2rem;    
+      font-size: 11px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* Body */
+    body {
+      background-color: var(--slate300);
+      height: 100vh;
+      max-width: 100%;
+      font-family: var(--body-font-family);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  max-width: 320px;
+  max-height: fit-content;
+  border-radius: 20px;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.QR-code img {
+  width: 280px;
+  height: 280px;
+  border-radius: 4%;
+}
+
+.card h2 {
+  color: var(--slate900);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+.card p {
+  color: var(--slate500);
+  font-size: var(--font-size);
+  padding: 0 0.5rem 2rem 0.5rem;
+}
